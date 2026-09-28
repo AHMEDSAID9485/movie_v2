@@ -13,7 +13,7 @@ final String title;
           fontFamily: 'Poppins',
           fontWeight: FontWeight.w500,
           color: Appcolor.seco_color,
-          fontSize: 12,
+          fontSize: 16,
         ),
       ),
     );

@@ -1,12 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
-import 'package:moviev2/core/theme/Appcolor.dart';
 import 'package:moviev2/core/widgets/CustomTextField.dart';
-import 'package:moviev2/features/home/presentation/widgets/CustomGridView.dart';
-import 'package:moviev2/features/home/presentation/widgets/CustomImageForList.dart';
-import 'package:moviev2/features/home/presentation/widgets/CustomTabWidget.dart';
 import 'package:moviev2/features/home/presentation/widgets/ListViewNowPlaying.dart';
 import 'package:moviev2/features/home/presentation/widgets/TabBarWidget.dart';
+import 'package:moviev2/features/home/presentation/widgets/ViewTabs.dart';
 
 class Homepage extends StatelessWidget {
   const Homepage({super.key});
@@ -17,7 +14,7 @@ class Homepage extends StatelessWidget {
       length: 4,
       child: Scaffold(
         body: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 16),
+          padding: const EdgeInsets.symmetric(horizontal: 12),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -37,15 +34,7 @@ class Homepage extends StatelessWidget {
               const ListViewNowPlaying(),
               const Gap(20),
               const TabBarWidget(),
-              Expanded(
-                child: TabBarView(
-                  children: [
-                    CustomGridView(),
-                    CustomGridView(),
-                    CustomGridView(),
-                    CustomGridView(),
-                ],),
-              )
+              const ViewTabs()
               
             ],
           ),
@@ -54,3 +43,5 @@ class Homepage extends StatelessWidget {
     );
   }
 }
+
+
