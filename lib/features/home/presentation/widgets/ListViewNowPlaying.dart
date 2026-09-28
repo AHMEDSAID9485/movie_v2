@@ -1,8 +1,6 @@
-
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
-import 'package:moviev2/features/home/presentation/widgets/CardNowPlayingWidget.dart';
-
+import 'package:moviev2/features/home/presentation/widgets/CustomImageForList.dart';
 class ListViewNowPlaying extends StatelessWidget {
   const ListViewNowPlaying({
     super.key,
@@ -17,7 +15,7 @@ class ListViewNowPlaying extends StatelessWidget {
         itemCount: 5,
         scrollDirection: Axis.horizontal,
         separatorBuilder: (context,index) => const Gap(10),
-        itemBuilder: (context,index) => const CardNowPlayingWidget(),
+        itemBuilder: (context,index) => const CustomImageForList(height: 180, width: 105),
         ),
     );
   }

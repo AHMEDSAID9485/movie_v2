@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:moviev2/core/theme/Appcolor.dart';
 import 'package:moviev2/core/widgets/CustomTextField.dart';
+import 'package:moviev2/features/home/presentation/widgets/CustomGridView.dart';
+import 'package:moviev2/features/home/presentation/widgets/CustomImageForList.dart';
 import 'package:moviev2/features/home/presentation/widgets/CustomTabWidget.dart';
 import 'package:moviev2/features/home/presentation/widgets/ListViewNowPlaying.dart';
 import 'package:moviev2/features/home/presentation/widgets/TabBarWidget.dart';
@@ -35,6 +37,15 @@ class Homepage extends StatelessWidget {
               const ListViewNowPlaying(),
               const Gap(20),
               const TabBarWidget(),
+              Expanded(
+                child: TabBarView(
+                  children: [
+                    CustomGridView(),
+                    CustomGridView(),
+                    CustomGridView(),
+                    CustomGridView(),
+                ],),
+              )
               
             ],
           ),
