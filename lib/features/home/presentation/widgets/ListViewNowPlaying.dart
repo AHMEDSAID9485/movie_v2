@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
-import 'package:moviev2/features/home/presentation/widgets/CustomImageForList.dart';
+import 'package:moviev2/features/Home/presentation/widgets/CustomImageForList.dart';
 class ListViewNowPlaying extends StatelessWidget {
   const ListViewNowPlaying({
     super.key,

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:moviev2/core/widgets/CustomTextField.dart';
-import 'package:moviev2/features/home/presentation/widgets/ListViewNowPlaying.dart';
-import 'package:moviev2/features/home/presentation/widgets/TabBarWidget.dart';
-import 'package:moviev2/features/home/presentation/widgets/ViewTabs.dart';
+import 'package:moviev2/features/Home/presentation/widgets/ListViewNowPlaying.dart';
+import 'package:moviev2/features/Home/presentation/widgets/TabBarWidget.dart';
+import 'package:moviev2/features/Home/presentation/widgets/ViewTabs.dart';
 
 class Homepage extends StatelessWidget {
   const Homepage({super.key});
@@ -34,6 +34,7 @@ class Homepage extends StatelessWidget {
               const ListViewNowPlaying(),
               const Gap(20),
               const TabBarWidget(),
+              const Gap(8),
               const ViewTabs()
               
             ],

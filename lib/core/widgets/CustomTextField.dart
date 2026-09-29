@@ -11,16 +11,12 @@ class CustomTextField extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextField(
       decoration: InputDecoration(
-        hintText: 'Search',
-        hintStyle: TextStyle(fontSize: 16,color: Appcolor.fort_color,fontWeight: FontWeight.normal),
+        hint: Text('Search', style: TextStyle(fontSize: 16, color: Appcolor.fort_color, fontWeight: FontWeight.normal)),
         filled: true,
+        isDense: true,
         fillColor: Appcolor.thir_color,
         suffixIcon: Icon(Icons.search,color: Appcolor.fort_color,size: 30,),
         enabledBorder: OutlineInputBorder(
-          borderSide: BorderSide.none,
-          borderRadius: BorderRadius.circular(18)
-        ),
-        border: OutlineInputBorder(
           borderSide: BorderSide.none,
           borderRadius: BorderRadius.circular(18)
         ),

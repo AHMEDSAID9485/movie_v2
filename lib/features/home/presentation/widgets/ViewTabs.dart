@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:moviev2/features/home/presentation/widgets/CustomGridView.dart';
+import 'package:moviev2/features/Home/presentation/widgets/CustomGridView.dart';
 
 class ViewTabs extends StatelessWidget {
   const ViewTabs({

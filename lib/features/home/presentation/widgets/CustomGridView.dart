@@ -1,6 +1,6 @@
 
 import 'package:flutter/material.dart';
-import 'package:moviev2/features/home/presentation/widgets/CustomImageForList.dart';
+import 'package:moviev2/features/Home/presentation/widgets/CustomImageForList.dart';
 
 class CustomGridView extends StatelessWidget {
   const CustomGridView({

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:moviev2/core/theme/Appcolor.dart';
-import 'package:moviev2/features/home/presentation/pages/HomePage.dart';
+import 'package:moviev2/features/Home/presentation/pages/HomePage.dart';
+import 'package:moviev2/features/Navigation/presentation/Pages/NavigationPage.dart';
 
 class Splashpage extends StatefulWidget {
   const Splashpage({super.key});
@@ -13,7 +14,7 @@ class _SplashpageState extends State<Splashpage> {
   @override
   void initState() {
     Future.delayed(const Duration(seconds: 3), () {
-      Navigator.push(context, MaterialPageRoute(builder: (context) => const Homepage()));
+      Navigator.push(context, MaterialPageRoute(builder: (context) => const NavigationPage()));
     });
     // TODO: implement initState
     super.initState();

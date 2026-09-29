@@ -1,7 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:moviev2/core/theme/Appcolor.dart';
-import 'package:moviev2/features/home/presentation/widgets/CustomTabWidget.dart';
+import 'package:moviev2/features/Home/presentation/widgets/CustomTabWidget.dart';
 
 class TabBarWidget extends StatelessWidget {
   const TabBarWidget({
@@ -14,7 +14,7 @@ class TabBarWidget extends StatelessWidget {
       indicatorSize: TabBarIndicatorSize.label,
       //indicatorColor: Appcolor.fort_color,
       indicator: UnderlineTabIndicator(
-        borderSide: BorderSide(width: 2, color: Appcolor.fort_color),
+        borderSide: BorderSide(width: 3, color: Appcolor.fort_color),
       ),
       isScrollable: true,
       tabAlignment: TabAlignment.start,
