@@ -29,7 +29,7 @@ class Homepage extends StatelessWidget {
                 ),
               ),
               const Gap(12),
-              const CustomTextField(),
+              const CustomTextField(readOnly: true),
               const Gap(12),
               const ListViewNowPlaying(),
               const Gap(20),
